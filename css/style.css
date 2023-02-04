@@ -1,0 +1,363 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+
+
+body {
+	font-size: 32px;
+	background: #fff; 
+	line-height: 1;
+}
+
+.wrapper {
+	padding: 80px;
+	min-height: 100vh; 
+}
+
+header{
+	height: 80px;
+	position: fixed;
+	background: #fff;
+	top: 0;
+	left: 0;
+	padding-top: 40px;
+	box-sizing: border-box; 
+	z-index: 10;
+}
+
+header .header-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+	
+header .lang {
+	text-decoration: none;
+    font-size: 18px;
+    border-right: 1px solid #272822;
+    padding-right: 8px;
+    color: #272822;
+}
+header .lang-ru {
+    text-decoration: none;
+    font-size: 18px;
+    color: #272822; 
+}
+
+header .header-block .header-top {
+    margin-left: 80px; 
+}
+
+header .header-block .header-area {
+    margin-right: 100px;
+}
+
+.links {
+	width: 80px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.links .icon {
+    margin-bottom: 19px;
+}
+
+ul {
+    list-style: none;
+}
+
+.hero {
+    width: 100%;
+    background: #A5CFE8;
+    height: calc(100vh - 160px);
+    margin: 0 0 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero:before {
+    content: "";
+    width: 50%;
+    background: url(../img/object-oriented-programming-in-python.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(100vh - 160px);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hero-text {
+    position: relative;
+}
+
+.hello {
+    margin-right: 700px;
+}
+
+.hero-text .welcome {
+    font-size: 80px;
+    line-height: 94px;
+    font-family: Roboto;
+    font-weight: 900;
+    color: white;
+}
+
+.hero .info {
+    opacity: 0;
+    display: none;
+    max-width: 600px;
+    height: 215px;
+    box-sizing: border-box;
+    padding-right: 30px;
+    margin-right: 600px; 
+}
+
+.hero .info .since {
+    font-size: 18px;
+    color: #F92672;
+    font-style: italic; 
+}
+
+.hero .info .markup {
+    font-size: 32px;
+    font-family: Roboto;
+    font-weight: 900;
+    margin-bottom: 20px; 
+}
+
+.hero:hover:before {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 4s, transform 2s; 
+}
+
+.hero:hover .info {
+    display: block;
+    opacity: 1; 
+}
+
+.hero:hover .welcome {
+    opacity: 0;
+    display: none; 
+}
+
+.parallax {
+    background-image: url(../img/computer.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.title {
+  	font-size: 80px;
+	line-height: 94px;
+	font-family: Roboto;
+	font-weight: 900;
+	z-index: 5; }
+
+.main {
+	height: 100%;
+    max-width: 100%;
+    background: #F5F5F5;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.main .data {
+ 	margin-top: 32px; 
+}
+
+.main .table {
+ 	margin-bottom: 32px;
+ 	position: relative;
+ 	cursor: pointer; 
+}
+
+.main .table:after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: #0D86DA;
+    position: absolute;
+    border-radius: 7px;
+    left: 520px;
+    top: 50%; 
+}
+
+.table:hover:after {
+    transition: all 1s linear;
+    background: #0D86DA;
+    width: 400px; 
+}
+
+.page {
+    background-image: url(../img/stol.jpg);
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.menu-open .projects {
+    z-index: 5;
+    position: relative;
+}
+
+.menu-open .projects {
+    display: block;
+}
+
+.projects {
+    padding: 80px;
+    background: #353535;
+    max-width: 100%;
+}
+
+.projects .title {
+    color: #E6DB74;
+}
+
+.projects .title-text {
+    margin: 80px auto 80px 0;
+    max-width: 600px;
+}
+
+.projects .title-text .lib {
+    font-size: 32px;
+    font-family: Roboto;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.projects .title-text .component {
+    color: #fff;
+    font-family: Roboto;
+}
+
+.projects .title-text .lab {
+    margin-top: 16px;
+    color: #0D86DA;
+}
+
+.projects .title-text .lab .git {
+    color: #0D86DA;
+}
+
+
+.experience {
+    height: 100%;
+    max-width: 100%;
+    background: #F5F5F5;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 5;
+    position: relative;
+}
+
+.title {
+    font-size: 80px;
+    line-height: 94px;
+    font-family: Roboto;
+    font-weight: 900;
+    z-index: 5;
+}
+
+.experience .edit {
+    margin: 80px 0;
+}
+
+.experience .tabs {
+    font-size: 18px;
+    color: #0D86DA;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+.experience .epam {
+    font-size: 32px;
+    font-family: Roboto;
+    font-weight: 900;
+}
+
+.experience .lab {
+    margin-top: 46px;
+    font-size: 18px;
+    color: #0D86DA;
+    font-style: italic;
+}
+
+.experience .lab .git {
+    color: #0D86DA;
+}
+
+.footer {
+    height: 100%;
+    max-width: 100%;
+    padding: 80px 80px 0 80px;
+    background: #fff;
+    z-index: 5;
+    position: relative;
+}
+
+.footer .lab {
+    font-size: 18px;
+    color: #0D86DA;
+    font-style: italic;
+}
+
+.footer .footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 23px;
+}
+
+.footer .sort {
+    color: #272822;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.footer .fone {
+    font-size: 18px;
+}
+
